@@ -115,23 +115,27 @@ const Register = () => {
                     />
                     <label htmlFor="floatingPasswordCustom">Password</label>
                 </Form.Floating>
-                <button className="text-danger border-0 bg-light mt-1" onClick={handleResetPassword}>Forget Password!</button>
+                <button className="text-danger border-0 bg-light mt-1 forget-btn" onClick={handleResetPassword}>Forget Password!</button>
                 <div className="text-danger fw-bold">
                     <p>{error}</p>
                 </div>
-                <Form.Check
-                    inline
-                    label="Already Registered?"
-                    name="toggleLogin"
-                    type="checkbox"
-                    id={`inline-checklist-1`}
-                    onChange={toggleLogin}
-                    className="mb-3"
-                />
-                <br />
-                <Button type="submit" className="p-2 px-4 fw-bold">
-                    {isLogin ? 'Login' : 'Register'}
-                </Button>
+                <div className="media-display">
+                    <Form.Check
+                        inline
+                        label="Already Registered?"
+                        name="toggleLogin"
+                        type="checkbox"
+                        id={`inline-checklist-1`}
+                        onChange={toggleLogin}
+                        className="mb-3"
+                    />
+                    <br />
+                    <div className="formButton">
+                        <Button type="submit" className="p-2 px-4 fw-bold form-btn">
+                            {isLogin ? 'Login' : 'Register'}
+                        </Button>
+                    </div>
+                </div>
             </form>
         </div>
     );

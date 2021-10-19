@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <div className="mt-5 mb-0 pb-0">
             <Container className="footer">
-                <div className="d-flex justify-content-between px-4 pt-4">
+                <div className="footer-child px-4 pt-4">
                     <div className="my-auto">
                         <img src="https://i.ibb.co/jZvkrTM/logo.png" alt="logo" className="mt-1" />
                         <Link to="/home" className="text-decoration-none text-dark"><h3 className="my-3">Aayat Ambulance Service</h3></Link>
@@ -40,7 +40,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <div className="d-flex flex-column mt-2">
+                        <div className="footer-sm-icon mt-2">
                             <a href="https://www.facebook.com/hosseniftakher/" className="text-dark fs-4">{facebookIcon}</a>
                             <a href="https://www.instagram.com/hossen_iftakher/" className="text-dark fs-4">{instagramIcon}</a>
                             <a href="https://www.linkedin.com/in/iftakher-hossen/" className="text-dark fs-4">{linkedInIcon}</a>
