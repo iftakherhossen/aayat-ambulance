@@ -1,38 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,700;1,500&display=swap');
 .App {
-  text-align: center;
+  font-family: 'Zilla Slab', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-hover {
+  border-bottom: 5px solid transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link-hover:hover {
+  border-bottom: 5px solid white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.google-btn {
+  font-size: 18px !important;
+}
+
+.form {
+  width: 350px;
+  margin: auto;
+}
+
+.img-not-found {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.img-not-found img {
+  width: 55% !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg-light-skyblue {
+  background-color: #e9f2fa;
+}
+
+.banner {
+  background-image: url("https://image1.jdomni.in/banner/02012020/B0/7A/DC/97B4709E3AD2906FEB8BAF27F1_1577944253649.jpg?output-format=webp") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: 440px;
+  width: 100%;
+}
+
+.banner-txt {
+  width: 400px;
+  margin-left: 80px;
+  padding: 120px 0 250px 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer {
+  background-color: skyblue;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .upper-nav {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .half-width {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-info img {
+    width: 60px;
+    height: 30px;
+  }
+  .site-info h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .banner {
+    width: 85%;
+    height: 300px;
+  }
+  .banner-txt {
+    width: 100%;
+    margin: auto;
+    padding: 120px 0 0 50px;
+  }
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px;
   }
 }
