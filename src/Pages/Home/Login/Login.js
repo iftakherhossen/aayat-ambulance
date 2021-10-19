@@ -13,7 +13,7 @@ const Login = () => {
                 <h5>to get Services!</h5>
             </div>
 
-            <div className="form mb-3">
+            <div className="form-register mb-3">
                 <Register></Register>
             </div>
 

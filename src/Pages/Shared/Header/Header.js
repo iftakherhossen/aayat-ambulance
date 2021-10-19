@@ -6,6 +6,7 @@ import useAuth from '../../../hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faSignInAlt, faSignOutAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -37,7 +38,7 @@ const Header = () => {
             </div>
             <Navbar bg="info" expand="lg">
                 <Container>
-                    <Navbar.Brand as={Link} to="/home" className="site-info">
+                    <Navbar.Brand as={HashLink} to="/home" className="site-info">
                         <img
                             src="https://i.ibb.co/jZvkrTM/logo.png"
                             width="100"
@@ -50,10 +51,10 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto fs-5 me-3">
-                            <Nav.Link as={Link} to="/home" className="link-hover">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/home#services" className="link-hover">Service</Nav.Link>
-                            <Nav.Link as={Link} to="/home#about-us" className="link-hover">About Us</Nav.Link>
-                            <Nav.Link as={Link} to="/home#gallery" className="link-hover">Gallery</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home" className="link-hover">Home</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#services" className="link-hover">Service</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#about-us" className="link-hover">About Us</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#gallery" className="link-hover">Gallery</Nav.Link>
                             <Nav.Link as={Link} to="/contact" className="link-hover">Contact</Nav.Link>
                         </Nav>
                         {user.email ?
