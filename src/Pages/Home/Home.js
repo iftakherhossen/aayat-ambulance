@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import AboutUs from './AboutUs/AboutUs';
+import Gallery from './Gallery/Gallery';
 import Services from './Services/Services';
 
 const Home = () => {
@@ -17,6 +19,14 @@ const Home = () => {
                 <div id="#services" className="my-3 text-center">
                     <h2>Services We Offer</h2>
                     <Services></Services>
+                </div>
+
+                <div id="#about-us" className="pt-5 pb-3">
+                    <AboutUs></AboutUs>
+                </div>
+
+                <div id="#gallery" className="pt-5 pb-3">
+                    <Gallery></Gallery>
                 </div>
             </Container>
         </div>

@@ -12,6 +12,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Pages/Shared/Footer/Footer';
+import ServiceDetails from './Pages/Home/Services/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/service/:serviceId">
+              <ServiceDetails></ServiceDetails>
             </Route>
             <Route path="/contact">
               <Contact></Contact>
