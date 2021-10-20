@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import AboutUs from './AboutUs/AboutUs';
 import Gallery from './Gallery/Gallery';
 import Services from './Services/Services';
+import Testimonial from './Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -27,6 +28,10 @@ const Home = () => {
 
                 <div id="gallery" className="pt-5 pb-3">
                     <Gallery></Gallery>
+                </div>
+
+                <div id="testimonial" className="pt-5 pb-2">
+                    <Testimonial></Testimonial>
                 </div>
             </Container>
         </div>

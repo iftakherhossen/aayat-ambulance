@@ -14,6 +14,7 @@ import Contact from './Pages/Contact/Contact';
 import Footer from './Pages/Shared/Footer/Footer';
 import ServiceDetails from './Pages/Home/Services/ServiceDetails/ServiceDetails';
 import PrivateRoute from './Pages/Home/Login/PrivateRoute/PrivateRoute';
+import Testimonial from './Pages/Home/Testimonial/Testimonial';
 
 function App() {
   return (
